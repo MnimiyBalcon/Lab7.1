@@ -1,0 +1,8 @@
+CREATE TABLE MusicBand (
+MB_ID integer NOT NULL UNIQUE CHECK (MB_ID > 0),
+
+MB_NAME text NOT NULL,
+
+MB_X float,
+
+MB_Y integer NOT NULL );

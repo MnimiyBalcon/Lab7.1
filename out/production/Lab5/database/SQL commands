@@ -1,0 +1,52 @@
+stat.executeQuery("CREATE TABLE HumanBeing ( " +
+                    "MB_id integer NOT NULL CHECK (MB_ID > 0), " +
+                    " " +
+                    "MB_name text NOT NULL, " +
+                    " " +
+                    "MB_x float CHECK (MB_X<=546), " +
+                    " " +
+                    "MB_y float NOT NULL CHECK (MB_Y<=287), " +
+                    " " +
+                    "MB_creationDate text NOT NULL, " +
+                    "   " +
+                    "MB_realHero boolean, " +
+                    " " +
+                    "MB_hasToothpick boolean NOT NULL, " +
+                    "   " +
+                    "MB_impactSpeed float CHECK (MB_impactSpeed<=995), " +
+                    "   " +
+                    "MB_soundtrackName text NOT NULL, " +
+                    "   " +
+                    "MB_minutesOfWaiting integer, " +
+                    "   " +
+                    "MB_mood text CHECK(MB_mood IN ('SORROW', 'LONGING', 'CALM', 'RAGE')), " +
+                    "   " +
+                    "MB_carname text NOT NULL, " +
+                    "   " +
+                    "MB_carcool boolean NOT NULL, " +
+                    " " +
+                    "OWNER text NOT NULL, " +
+                    "   " +
+                    "PRIMARY KEY(MB_id) " +
+                    ");");*/
+
+            /*stat.executeQuery("CREATE TABLE USERS (name text not null, password text not null, primary key (name));");*/
+
+            /*stat.executeQuery("CREATE SEQUENCE HumanBeingIdSeq " +
+                    "START WITH 1 " +
+                    "INCREMENT BY 1;");*/
+
+            /*stat.executeQuery("INSERT INTO HumanBeing VALUES(nextval('HumanBeingIdSeq'), 'Ivan Ivanov', -1251.125, 1.0, '2023-03-12T16:28:44.385894700+03:00[Europe/Moscow]',\n" +
+                    "    true, true, 1.0, 1, null, null, 'BMW', true, '1');");
+
+
+stat.executeUpdate("CREATE TABLE HumanBeing (id integer NOT NULL CHECK (id > 0),name text NOT NULL, x float CHECK (x<=546), y float NOT NULL CHECK (y<=287), creationDate text NOT NULL, realHero boolean,hasToothpick boolean NOT NULL, impactSpeed float CHECK (impactSpeed<=995), soundtrackName text NOT NULL, minutesOfWaiting integer, mood text CHECK(mood IN ('SORROW', 'LONGING', 'CALM', 'RAGE', null)),carname text NOT NULL, carcool boolean NOT NULL, OWNER text NOT NULL, PRIMARY KEY(id));");
+
+
+/*stat.executeUpdate("DROP TABLE HumanBeing");
+            stat.executeUpdate("DROP TABLE USERS");
+            stat.executeUpdate("DROP SEQUENCE HumanBeingIdSeq");
+
+            stat.executeUpdate("CREATE TABLE HumanBeing (id integer NOT NULL CHECK (id > 0),name text NOT NULL, x float CHECK (x<=546), y float NOT NULL CHECK (y<=287), creationDate text NOT NULL, realHero boolean,hasToothpick boolean NOT NULL, impactSpeed float CHECK (impactSpeed<=995), soundtrackName text NOT NULL, minutesOfWaiting integer, mood text CHECK(mood IN ('SORROW', 'LONGING', 'CALM', 'RAGE', null)),carname text NOT NULL, carcool boolean NOT NULL, OWNER text NOT NULL, PRIMARY KEY(id));");
+            stat.executeUpdate("CREATE TABLE USERS (name text not null, password text not null, primary key (name));");
+            stat.executeUpdate("CREATE SEQUENCE HumanBeingIdSeq START WITH 1 INCREMENT BY 1;");*/

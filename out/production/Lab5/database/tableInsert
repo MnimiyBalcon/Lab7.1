@@ -1,0 +1,10 @@
+INSERT INTO MusicBand (MB_ID, MB_NAME, MB_X, MB_Y)
+VALUES(nextval('MusicBandIdSeq'), 'The Rolling Stones', 1, 1.1);
+
+INSERT INTO MusicBand (MB_ID, MB_NAME, MB_X, MB_Y)
+
+VALUES(nextval('MusicBandIdSeq'), 'The Beatles', 10, 2.1);
+
+INSERT INTO MusicBand (MB_ID, MB_NAME, MB_X, MB_Y)
+
+VALUES(nextval('MusicBandIdSeq'), 'Depeche Mode', 5, 1.1);
